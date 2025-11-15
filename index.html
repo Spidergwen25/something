@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryem Jagani | 3D & Gaming Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <canvas id="particlesCanvas"></canvas>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span class="logo-text">MARYEM<span class="logo-accent">3D</span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#models" class="nav-link">3D Models</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <div class="typing-container">
+                        <h1>Hi, I'm <span class="gradient-text">Maryem Jagani</span></h1>
+                    </div>
+                    <p class="subtitle tech-font">
+                        <span class="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </p>
+                    <p class="hero-description">Creative tech student specializing in 3D modeling, animation, and front-end development. Passionate about bringing digital worlds to life through code and design.</p>
+
+                    <div class="contact-info-hero">
+                        <div class="contact-item-hero" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-icon-hero">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text-hero">
+                                <p>Rabat, Morocco</p>
+                            </div>
+                        </div>
+                        <div class="contact-item-hero" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-icon-hero">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text-hero">
+                                <p>spidermanim49@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item-hero" data-aos="fade-up" data-aos-delay="300">
+                            <div class="contact-icon-hero">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text-hero">
+                                <p>07 00 27 35 64</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#models" class="btn btn-primary">
+                            <span>View My 3D Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <div class="social-links-hero" data-aos="fade-up" data-aos-delay="500">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-artstation"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <div class="pixel-corners"></div>
+                        <div class="pixel-corners"></div>
+                        <div class="pixel-corners"></div>
+                        <div class="pixel-corners"></div>
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Maryem Jagani">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- 3D Models Section -->
+    <section id="models" class="models-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="tech-font">3D Models & Animations</h2>
+                <p>My latest 3D creations and animated projects</p>
+            </div>
+
+            <div class="model-viewer" data-aos="zoom-in">
+                <div class="viewer-content">
+                    <i class="fas fa-cube rotating-cube"></i>
+                    <p>Interactive 3D Model Viewer</p>
+                    <span class="viewer-hint">Click to explore models in 3D</span>
+                </div>
+            </div>
+
+            <div class="models-grid">
+                <div class="model-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Character Model">
+                        <div class="model-overlay">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Project
+                            </a>
+                        </div>
+                        <div class="model-badge">Featured</div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Fantasy Character</h3>
+                        <p>A detailed fantasy character model with custom textures and rigging for animation.</p>
+                        <div class="model-stats">
+                            <span><i class="fas fa-eye"></i> 1.2k</span>
+                            <span><i class="fas fa-heart"></i> 342</span>
+                        </div>
+                        <div class="model-tags">
+                            <span>Blender</span>
+                            <span>Character Design</span>
+                            <span>Rigging</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Environment Model">
+                        <div class="model-overlay">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Sci-Fi Environment</h3>
+                        <p>Futuristic cityscape with detailed buildings, vehicles, and atmospheric effects.</p>
+                        <div class="model-stats">
+                            <span><i class="fas fa-eye"></i> 2.1k</span>
+                            <span><i class="fas fa-heart"></i> 568</span>
+                        </div>
+                        <div class="model-tags">
+                            <span>Maya</span>
+                            <span>Environment</span>
+                            <span>Lighting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Animation Project">
+                        <div class="model-overlay">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Project
+                            </a>
+                        </div>
+                        <div class="model-badge new">New</div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Short Animation</h3>
+                        <p>30-second animated short featuring original character and environment models.</p>
+                        <div class="model-stats">
+                            <span><i class="fas fa-eye"></i> 890</span>
+                            <span><i class="fas fa-heart"></i> 234</span>
+                        </div>
+                        <div class="model-tags">
+                            <span>Animation</span>
+                            <span>Rigging</span>
+                            <span>Rendering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Weapon Design">
+                        <div class="model-overlay">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Game Weapon Design</h3>
+                        <p>Low-poly stylized weapon with PBR textures optimized for game engines.</p>
+                        <div class="model-stats">
+                            <span><i class="fas fa-eye"></i> 1.5k</span>
+                            <span><i class="fas fa-heart"></i> 421</span>
+                        </div>
+                        <div class="model-tags">
+                            <span>Game Asset</span>
+                            <span>PBR</span>
+                            <span>Texturing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Vehicle Model">
+                        <div class="model-overlay">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Futuristic Vehicle</h3>
+                        <p>Detailed hover vehicle with animated parts and realistic materials.</p>
+                        <div class="model-stats">
+                            <span><i class="fas fa-eye"></i> 3.2k</span>
+                            <span><i class="fas fa-heart"></i> 892</span>
+                        </div>
+                        <div class="model-tags">
+                            <span>Hard Surface</span>
+                            <span>Vehicle</span>
+                            <span>Materials</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Creature Design">
+                        <div class="model-overlay">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Project
+                            </a>
+                        </div>
+                        <div class="model-badge">Featured</div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Creature Design</h3>
+                        <p>Original creature concept with detailed sculpting and animation-ready topology.</p>
+                        <div class="model-stats">
+                            <span><i class="fas fa-eye"></i> 2.8k</span>
+                            <span><i class="fas fa-heart"></i> 756</span>
+                        </div>
+                        <div class="model-tags">
+                            <span>Sculpting</span>
+                            <span>Creature</span>
+                            <span>Concept Art</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="tech-font">About Me</h2>
+                <p>Learn more about my background and education</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="About Me">
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h4 class="counter" data-target="50">0</h4>
+                                <p>Projects</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4 class="counter" data-target="3">0</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4 class="counter" data-target="30">0</h4>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Creative Tech Student</h3>
+                    <p>I'm a motivated and creative tech student with hands-on experience in 3D modeling, animation, network technologies and front-end development. Passionate about creating immersive digital experiences and continuously improving technical skills.</p>
+                    <p>Multilingual and adaptable, with strong communication and teamwork abilities. Currently studying at ISMAC – Institut Supérieur des Métiers de l'Audiovisuel et du Cinéma.</p>
+
+                    <div class="education-info">
+                        <div class="education-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>ISMAC</h4>
+                                <p>Institut Supérieur des Métiers de l'Audiovisuel et du Cinéma</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <div class="skill" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-name">
+                                <span><i class="fas fa-cube"></i> 3D Modeling & Animation</span>
+                                <span class="percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-name">
+                                <span><i class="fas fa-code"></i> Front-End Development</span>
+                                <span class="percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-name">
+                                <span><i class="fas fa-network-wired"></i> Network Technologies</span>
+                                <span class="percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-name">
+                                <span><i class="fas fa-film"></i> Animation & Rigging</span>
+                                <span class="percentage">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="tech-font">Experience</h2>
+                <p>My professional journey and projects</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3>3D Modeler & Animator</h3>
+                        <h4>Freelance Projects</h4>
+                        <p>Created character models, environments, and animations for various clients and personal projects. Specialized in fantasy and sci-fi themes with attention to detail and realistic movement.</p>
+                        <ul class="timeline-list">
+                            <li>Created 50+ 3D models for various clients</li>
+                            <li>Developed animation sequences for game projects</li>
+                            <li>Collaborated with indie game developers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3>Network Technician</h3>
+                        <h4>Tech Réseau</h4>
+                        <p>Assisted in installation, troubleshooting, and maintenance of network systems. Supported users with technical issues and ensured stable connectivity. Collaborated with team members to improve network performance.</p>
+                        <ul class="timeline-list">
+                            <li>Maintained network infrastructure for 100+ users</li>
+                            <li>Resolved technical issues with 95% satisfaction rate</li>
+                            <li>Implemented security protocols</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - Present</span>
+                        <h3>Front-End Web Developer</h3>
+                        <h4>Freelance / Personal Projects</h4>
+                        <p>Built responsive websites using HTML, CSS, and JavaScript. Created interactive UI components and optimized designs for both mobile and desktop. Worked with clients or personal projects to deliver clean, modern web interfaces.</p>
+                        <ul class="timeline-list">
+                            <li>Developed 20+ responsive websites</li>
+                            <li>Improved page load times by 40%</li>
+                            <li>Created custom UI/UX solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="tech-font">Skills</h2>
+                <p>My technical and professional capabilities</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="flip-left" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Modeling</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Blender</li>
+                        <li><i class="fas fa-check-circle"></i> Maya</li>
+                        <li><i class="fas fa-check-circle"></i> ZBrush</li>
+                        <li><i class="fas fa-check-circle"></i> Substance Painter</li>
+                        <li><i class="fas fa-check-circle"></i> Texturing</li>
+                        <li><i class="fas fa-check-circle"></i> Rigging</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-aos="flip-left" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Animation</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Character Animation</li>
+                        <li><i class="fas fa-check-circle"></i> Keyframe Animation</li>
+                        <li><i class="fas fa-check-circle"></i> Motion Graphics</li>
+                        <li><i class="fas fa-check-circle"></i> Rendering</li>
+                        <li><i class="fas fa-check-circle"></i> VFX</li>
+                        <li><i class="fas fa-check-circle"></i> Cinematography</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-aos="flip-left" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> HTML5/CSS3</li>
+                        <li><i class="fas fa-check-circle"></i> JavaScript (ES6+)</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                        <li><i class="fas fa-check-circle"></i> Git & GitHub</li>
+                        <li><i class="fas fa-check-circle"></i> UI/UX Design</li>
+                        <li><i class="fas fa-check-circle"></i> Three.js</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-aos="flip-left" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Networking</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Network Setup</li>
+                        <li><i class="fas fa-check-circle"></i> Troubleshooting</li>
+                        <li><i class="fas fa-check-circle"></i> Configuration</li>
+                        <li><i class="fas fa-check-circle"></i> Security</li>
+                        <li><i class="fas fa-check-circle"></i> Maintenance</li>
+                        <li><i class="fas fa-check-circle"></i> Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="tech-font">Languages</h2>
+                <p>Languages I speak and write</p>
+            </div>
+            <div class="languages-container">
+                <div class="language-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="language-flag">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Arabic</h3>
+                    <p>Native</p>
+                    <div class="health-bar">
+                        <div class="health" data-width="100"></div>
+                    </div>
+                    <span class="language-percent">100%</span>
+                </div>
+                <div class="language-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="language-flag">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>French</h3>
+                    <p>Fluent</p>
+                    <div class="health-bar">
+                        <div class="health" data-width="90"></div>
+                    </div>
+                    <span class="language-percent">90%</span>
+                </div>
+                <div class="language-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="language-flag">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Fluent</p>
+                    <div class="health-bar">
+                        <div class="health" data-width="85"></div>
+                    </div>
+                    <span class="language-percent">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="interests">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="tech-font">Interests</h2>
+                <p>What I enjoy outside of work</p>
+            </div>
+            <div class="interests-container">
+                <div class="interest-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="interest-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Modeling</h3>
+                    <p>Creating digital art</p>
+                </div>
+                <div class="interest-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="interest-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                    <p>Exploring virtual worlds</p>
+                </div>
+                <div class="interest-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="interest-icon">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3>Guitar</h3>
+                    <p>Playing music</p>
+                </div>
+                <div class="interest-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="interest-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Dev</h3>
+                    <p>Building websites</p>
+                </div>
+                <div class="interest-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="interest-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>UI/UX creation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="tech-font">Contact Me</h2>
+                <p>Feel free to reach out for opportunities or collaborations</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Rabat, Morocco</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>spidermanim49@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>07 00 27 35 64</p>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424143.99840830214!2d-6.969470599999999!3d33.9715904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b871f50c5c1%3A0x7ac946ed7408076b!2sRabat%2C%20Morocco!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" width="100%" height="250" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Message sent successfully! I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-cube"></i>
+                        <span>MARYEM<span class="logo-accent">3D</span></span>
+                    </a>
+                    <p>Creating immersive digital experiences through 3D art and code.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#models">3D Models</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <p><i class="fas fa-envelope"></i> spidermanim49@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 07 00 27 35 64</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rabat, Morocco</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-artstation"></i>
+                </a>
+                <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Maryem Jagani. All Rights Reserved. Made with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
+            </div>
+        </div>
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cursor Effect -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
